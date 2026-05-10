@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Quiz App</h1>
+    <nav>
+      <a href="#quiz">Quiz</a>
+      <a href="#admin">Admin Panel</a>
+    </nav>
+  </header>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="card">
+    <h2>Java Basics Quiz</h2>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. What does JVM stand for?</p>
+        <label><input type="radio" name="q1" value="Java Virtual Machine"> Java Virtual Machine</label>
+        <label><input type="radio" name="q1" value="Java Variable Method"> Java Variable Method</label>
+      </div>
+
+      <div class="question">
+        <p>2. Which keyword is used to define a class in Java?</p>
+        <label><input type="radio" name="q2" value="class"> class</label>
+        <label><input type="radio" name="q2" value="define"> define</label>
+      </div>
+
+      <div class="question">
+        <p>3. Which method is the entry point of a Java program?</p>
+        <label><input type="radio" name="q3" value="main()"> main()</label>
+        <label><input type="radio" name="q3" value="start()"> start()</label>
+      </div>
+
+      <div class="question">
+        <p>4. Which operator is used for comparison in Java?</p>
+        <label><input type="radio" name="q4" value="=="> ==</label>
+        <label><input type="radio" name="q4" value="="> =</label>
+      </div>
+
+      <div class="question">
+        <p>5. Which data type is used to store decimal values?</p>
+        <label><input type="radio" name="q5" value="int"> int</label>
+        <label><input type="radio" name="q5" value="double"> double</label>
+      </div>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+
+    <!-- Result Display -->
+    <div id="result"></div>
+  </section>
+
+  <!-- Admin Panel Section -->
+  <section id="admin" class="card">
+    <h2>Admin Panel</h2>
+    <form>
+      <label>Question: <input type="text" placeholder="Enter question"></label>
+      <label>Option A: <input type="text" placeholder="Enter option"></label>
+      <label>Option B: <input type="text" placeholder="Enter option"></label>
+      <button type="submit">Add Question</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Quiz App Prototype</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
